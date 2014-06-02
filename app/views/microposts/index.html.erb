@@ -1,27 +1,41 @@
-<h1>Listing microposts</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Content</th>
-      <th>User</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @microposts.each do |micropost| %>
-      <tr>
-        <td><%= micropost.content %></td>
-        <td><%= micropost.user_id %></td>
-        <td><%= link_to 'Show', micropost %></td>
-        <td><%= link_to 'Edit', edit_micropost_path(micropost) %></td>
-        <td><%= link_to 'Destroy', micropost, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Micropost', new_micropost_path %>
+{
+    "contacts": [
+        {
+            "id": "c200",
+            "name": "Boojum",
+            "email": "Mon-Fri",
+            "address": "xx-xx-xxxx,x - street, x - country",
+            "gender": "male",
+            "phone": {
+                "mobile": "Buritto + Drink €5",
+                "home": "00 000000",
+                "office": "00 000000"
+            }
+        },
+        {
+            "id": "c201",
+            "name": "Mamas Revenge",
+            "email": "Tuesdays Only",
+            "address": "xx-xx-xxxx,x - street, x - country",
+            "gender": "male",
+            "phone": {
+                "mobile": "HondaBoysssssss",
+                "home": "00 000000",
+                "office": "00 000000"
+            }
+        },
+        {
+            "id": "c203",
+            "name": "Tolteca",
+            "email": "Saturdays Only",
+            "address": "xx-xx-xxxx,x - street, x - country",
+            "gender": "male",
+            "phone": {
+                "mobile": "Free Burrito before 12",
+                "home": "00 000000",
+                "office": "00 000000"
+            }
+        }
+        
+    ]
+}
